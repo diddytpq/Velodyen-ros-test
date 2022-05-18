@@ -1,0 +1,2 @@
+velodyne:velodyne_driver:velodyne_laserscan:velodyne_msgs:velodyne_pcl:velodyne_pointcloud
+-DPYTHON_EXECUTABLE=/usr/bin/python3 -DCATKIN_DEVEL_PREFIX=/home/yoseph/worckspace/Velodyen-ros-test/devel -DCMAKE_INSTALL_PREFIX=/home/yoseph/worckspace/Velodyen-ros-test/install -G Unix Makefiles
