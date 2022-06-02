@@ -13,9 +13,3 @@ roslaunch velodyne_pointcloud VLP16_points.launch
 rostopic echo /velodyne_points
 ```
 
-### check lidar data in rviz
-```bash
-rosrun rviz rviz -f velodyne
-```
-
-

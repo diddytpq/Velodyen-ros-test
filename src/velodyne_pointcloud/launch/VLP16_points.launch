@@ -3,6 +3,8 @@
 
 <launch>
 
+  <arg name="rviz" default="true"/>
+
   <!-- declare arguments with default values -->
   <arg name="calibration" default="$(find velodyne_pointcloud)/params/VLP16db.yaml"/>
   <arg name="device_ip" default="" />
@@ -60,5 +62,10 @@
     <arg name="ring" value="$(arg laserscan_ring)"/>
     <arg name="resolution" value="$(arg laserscan_resolution)"/>
   </include>
+
+  <group if ="$(arg rviz)">
+    <node name="rviz" pkg="rviz" type="rviz" args="-d $(find velodyne_pointcloud)/rviz/VLP16_point_view.rviz" />
+  </group>
+
 
 </launch>
